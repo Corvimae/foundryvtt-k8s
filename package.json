@@ -1,0 +1,17 @@
+{
+  "name": "foundryvtt-k8s",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "docopt": "^0.6.2",
+    "fetch-cookie": "^0.9.1",
+    "node-fetch": "^2.6.0",
+    "tough-cookie": "^4.0.0",
+    "util": "^0.12.3"
+  },
+  "scripts": {
+    "download": "node download-release.js"
+  }
+}
