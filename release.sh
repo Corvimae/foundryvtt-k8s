@@ -11,4 +11,5 @@ yarn download $1
 
 docker build -t corvimae/foundryvtt:latest .
 docker push corvimae/foundryvtt:latest
-kubectl apply -f foundryvtt-deployment.yaml
+
+kubectl patch deployment foundryvtt -p "{\"spec\": {\"template\": {\"metadata\": { \"labels\": {  \"version\": \"$1\"}}}}}"
